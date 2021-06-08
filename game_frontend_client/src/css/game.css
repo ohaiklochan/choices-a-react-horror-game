@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    background-image: url('../images/86326.jpg');
+    height: 1000px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    text-align: center;
+    color: whitesmoke;
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Nightscary\ Free\ Trial.ttf);
+}
+
