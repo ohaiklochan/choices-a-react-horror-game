@@ -5,6 +5,8 @@ body {
     width: 1000px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 div {
@@ -17,4 +19,60 @@ div {
     font-family: myFirstFont;
     src: url(../fonts/Nightscary\ Free\ Trial.ttf);
 }
+
+h1 {
+    margin: 0;
+    user-select: none;
+    text-align: center;
+    font-weight: 300; 
+}
+
+h2 {
+    margin: 0;
+    user-select: none;
+    text-align: center;
+    font-weight: 100; 
+}
+    
+    
+p {
+    font-weight: 300;
+    color: #FFFFFF;
+    user-select: none;
+    text-align: center;
+    margin: 0; 
+}
+    
+    
+a { 
+    text-align: center;
+    text-decoration: none;
+    color: #FFF; 
+}
+
+.gamescreen {
+    background: red;
+    height: 52vh;
+    width: 71vw;
+    text-align: center;
+    display: inline-block;
+    top: 8vh;
+    position: relative;
+}
+
+.choiceA{
+    background: black;
+    height: 18vh;
+    width: 29vw;
+    float: left;
+  
+  }
+  
+.choiceB{
+    background: black;
+    height: 18vh;
+    width: 29vw;
+    float: right;
+  
+  }
 
