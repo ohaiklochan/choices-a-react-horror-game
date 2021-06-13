@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-Choices.destroy_all
+Choice.destroy_all
 
 User.create(name: "Chloe", age: "31")
 
