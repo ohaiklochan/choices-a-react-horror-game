@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    background-image: url('../images/86326.jpg');
     height: 1000px;
     width: 1000px;
     background-repeat: no-repeat;
@@ -20,20 +19,28 @@ div {
     src: url(../fonts/Nightscary\ Free\ Trial.ttf);
 }
 
+button {
+    background: black;
+    color: white
+}
+
 h1 {
     margin: 0;
     user-select: none;
     text-align: center;
-    font-weight: 300; 
+    font-weight: 600; 
+    color:white;
+    font-size: large;
 }
 
 h2 {
     margin: 0;
     user-select: none;
     text-align: center;
-    font-weight: 100; 
+    font-weight: 500; 
+    color: white;
+    font-size: medium;
 }
-    
     
 p {
     font-weight: 300;
@@ -48,10 +55,12 @@ a {
     text-align: center;
     text-decoration: none;
     color: #FFF; 
+    font-size: medium;
 }
 
-.gamescreen {
-    background: red;
+.screenContainer {
+    /* background: rgb(133, 59, 59); */
+    background-image: url('../images/86326.jpg');
     height: 52vh;
     width: 71vw;
     text-align: center;
@@ -60,19 +69,48 @@ a {
     position: relative;
 }
 
-.choiceA{
+.outerbox {
+    height: 82vh;
+    display: inline-block;
+    margin-top: -1vh;
+    width: 90vw;
+    float: left;
+}
+
+.screen {
+    height: 52vh;
+    width: 71vw;
+    text-align: center;
+    display: inline-block;
+    top: 8vh;
+    position: relative;
+}
+
+.checked{
+    display: flex
+}
+
+.choiceA {
     background: black;
     height: 18vh;
     width: 29vw;
     float: left;
+}
   
-  }
-  
-.choiceB{
+.choiceB {
     background: black;
     height: 18vh;
     width: 29vw;
     float: right;
-  
-  }
+}
+
+.choiceC {
+    height: 18vh;
+    width: 29vw;
+    top: 16vw;
+    background: white;
+    position: relative;
+    align-self: center;
+    display: inline-block;
+}
 

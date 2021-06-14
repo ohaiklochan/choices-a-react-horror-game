@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Game from './components/game'
+import Game from './components/game'
 import Choice from './components/choice'
 // import Intro from './components/intro'
 // import Ending from './components/ending'
@@ -44,13 +44,10 @@ changePath = (choice) => {
         {this.state.gameStarted ? <Choice prompt={this.state.prompt} choiceA={this.state.choiceA} choiceB={this.state.choiceB} changePath={this.changePath} /> :
         <div className="background">
           <button onClick={this.goToChoice}>Start</button>
-          <button>I'm not ready</button>
-          <div className="grunge">
-            <div className="blood">Random stuff</div>
-            <p>Are you afraid of the dark?</p>
+            <div className="description">Choices: A React Horror Game</div>
+            <p>Do you have what it takes to survive the night?</p>
           </div>
-      </div>
-  }
+        }
   </div>
     )}
 }
