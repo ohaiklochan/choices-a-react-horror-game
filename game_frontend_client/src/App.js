@@ -26,14 +26,24 @@ goToChoice = () => {
   })
 }
 
-changePath = (choice) => {
-  if (choice) {
-    this.setState({
-      prompt: "Making sure this works",
-      choiceA: "YUP",
-      choiceB: "NOPE",
-      turn: this.state.turn + 1
-    })
+changePath = (choices, choice) => {
+  if (choices.choiceA == choice) {
+    const options = this.state.choices.filter(choice => choice.turn == this.state.turn)
+    const filteredOptions = options.filter(choice => choice.route == this.state.route)
+    const reFilteredOptions = filteredOptions.filter(choice => choice.from == this.state.prompt)
+    const newPath = reFilteredOptions.find(choice => choice.path == "left")
+    const newerPath = reFilteredOptions.filter(choice => choice.path == "left")
+    const choice = this.state.choices[0].path
+    if(this.state.route == "none") {
+      this.setState({
+        prompt: newPath.prompt,
+        choiceA: newPath.choiceA,
+        choiceB: newPath.choiceB,
+        turn: this.state.turn + 1,
+        route: "Good"
+      })
+    }
+    
   }
 }
 
