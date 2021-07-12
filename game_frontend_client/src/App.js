@@ -4,7 +4,6 @@ import Choice from './components/choice'
 import Intro from './components/intro'
 import Ending from './components/ending'
 import { BuzzFeedQuiz } from "react-buzzfeed-quiz"
-import "./css/game.css"
 import "react-buzzfeed-quiz/lib/styles.css"
 
 class App extends Component {
